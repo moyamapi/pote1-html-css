@@ -1,0 +1,135 @@
+body {
+  width:100%;
+  font-family:  "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  margin:0;
+}
+a {
+  text-decoration: none;
+}
+/*header*/
+header {
+  display: flex;
+  margin:0 36px;
+}
+.header-logo {
+  height: 20px;
+  width: 185px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.list {
+  display: inline-block;
+  display: flex;
+  gap:36px;
+  font-size: 15px;
+  text-align: right;
+  list-style: none;
+  justify-content:space-between;
+}
+span {
+  font-size:10px;
+  font-weight: bolder;
+}
+.header-list {
+  text-align: center;
+  color:black;
+  font-weight:bold;
+}
+
+.linktuki {
+  background-color: #f79214;
+  border-radius: 30px;
+  color:white;
+  padding:15px;
+  margin: 15px;
+  font-size: 13px;
+}
+
+/*main*/
+.back-img {
+  background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  
+  
+}
+.muryou {
+  color: white;
+  background-color: #f79214;
+}
+
+
+.main {
+  margin-left:200px;
+  padding-top:0px;
+}
+h1 {
+  
+  font-size: 40px
+}
+
+
+.link {
+  padding-top: 20px;
+}
+.kause {
+  background-color: #f79214;
+  color: white;
+  border-radius: 30px;
+  padding:20px;
+}
+
+.siryou {
+  color: black;
+  border:2px solid gray;
+  border-radius: 30px;
+  margin:15px;
+  padding:15px;
+}
+
+.kome {
+  list-style: none;
+  color: #c0c0c0;
+  font-size: 12px;
+  margin-top: 80px;
+  padding-left:0;
+}
+
+/*オレンジゾーン*/
+.focus {
+  background-color: #f79214;
+  display:flex;
+  width:auto;
+  height:380px;
+  color:white;
+  margin:0;
+  text-align: center;
+}
+.video {
+  height: 292px;
+  width:500px;
+  margin-top: 40px;
+  margin-left:200px;
+}
+.text {
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding-top: 45px;
+  margin-left: 20px;
+  text-align: left;
+  
+}
+.potepantoha {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  
+}
+.syousai {
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.service {
+  color: white;
+  font-weight: bolder;
+}
