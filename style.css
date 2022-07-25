@@ -2,52 +2,79 @@ body {
   width:100%;
   font-family:  "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
   margin:0;
+  font-size: 14px;
 }
 a {
   text-decoration: none;
   color: black;
 }
 /*header*/
-
-.header-logo {
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width:100%;
+  margin-top: 0;
+  position: absolute;
+}
+.header-logo :hover {
+  opacity: 0.8;
+}
+.header-logo-img {
   height: 20px;
-  width: 185px;
-  margin-left: 20px;
-  margin-top: 15px;
 }
 .header-container {
   margin:0 36px;
   display: flex;
+  max-width: 100%;
+  justify-content: space-between;
 }
-nav {
-  text-align: right;
+.header-nav {
+  display: inline-flex;
+  height:40px;
+  
 }
 .list {
   display: flex;
-  gap:36px;
-  font-size: 15px;
+  font-weight: 700;
   list-style: none;
-  font-weight:bold;
+  align-items:center;
+  line-height: 1em;
 }
-span {
+.list-item {
+  margin-right: 45px;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  font-weight: 700px;
+  font-family: 'Lato',sans-serif;
+}
+.list-item:hover {
+  opacity: 0.8;
+}
+.list-item span {
   font-size:10px;
-  font-weight: bolder;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 }
-.linktuki {
+.link-button {
   background-color: #f79214;
-  border-radius: 30px;
+  border-radius: 38px;
   color:white;
   padding:15px;
-  margin: 15px;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 700 !important;
+  height:40px;
+}
+.linktuki:hover {
+  opacity: 0.8;
 }
 
 /*main*/
 .back-img {
   background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
   background-size: cover;
-  
-  
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 28px;
 }
 .muryou {
   color: white;
@@ -55,78 +82,123 @@ span {
 }
 
 
-.main {
-  margin-left:200px;
-  padding-top:0px;
-}
-h1 {
+.firstview-container {
+  margin-left:150px;
+  margin-right: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1140px;
   
-  font-size: 40px
 }
-
+.firstview-title {
+  font-family: 'Lato',sans-serif !important;
+  font-size: 38px;
+  line-height: 54px;
+  margin-bottom: 15px;
+  width: fit-content;
+  text-align: center;
+  margin-top: 0;
+}
+.firstview-imges {
+  margin-bottom: 25px;
+  display:inline-flex;
+  gap: 8px;
+}
 
 .link {
-  padding-top: 20px;
+  display: flex;
+  height: 64px;
+  text-align: center;
+  padding-bottom: 70px;
 }
-.kause {
+.link:hover{
+  opacity: 0.8;
+}
+.link-orange {
   background-color: #f79214;
   color: white;
-  border-radius: 30px;
-  padding:20px;
+  border-radius: 38px;
+  padding: 20px;
+  margin-right: 15px;
+  width: 306px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.siryou {
+.link-white {
   color: black;
-  border:2px solid gray;
-  border-radius: 30px;
-  margin:15px;
+  border:1px solid #e0e0e0;
+  border-radius: 38px;
   padding:15px;
+  width:176px;
+  line-height: 32px;
+  font-weight: 700;
 }
 
-.kome {
-  list-style: none;
-  color: #c0c0c0;
+.caption {
+  color: #a2a2a4 !important;
   font-size: 12px;
-  margin-top: 80px;
-  padding-left:0;
+  margin-top: 0;
+}
+.caption-more {
+  color: #a2a2a4;
 }
 
 /*オレンジゾーン*/
-.focus {
+.focus-container {
+  padding:44px 0;
   background-color: #f79214;
+  margin-top: 0;
+}
+.focus {
   display:flex;
-  width:auto;
-  height:380px;
   color:white;
-  margin:0;
-  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+  max-width: 1140px;
 }
 .video {
-  height: 292px;
-  width:500px;
-  margin-top: 40px;
-  margin-left:200px;
+ width: 50%;
 }
 .text {
-  font-size: 16px;
-  margin-bottom: 16px;
-  padding-top: 45px;
-  margin-left: 20px;
-  text-align: left;
+  margin-bottom: 0px;
+  margin-left: 32px;
+  align-items:center;
   
 }
-.potepantoha {
+h2 {
   font-size: 38px;
-  font-weight: bold;
+  line-height: 54px;
   margin-bottom: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   
 }
-.syousai {
-  font-weight: bolder;
-  letter-spacing: 2px;
+h2 span {
+  font-size: 38px;
+  font-family: 'Lato',sans-serif;
 }
-.service {
+.focus-title {
+  font-family: 'Lato',sans-serif;
+  font-size: 38px;
+}
+.text p {
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+.button {
   color: white;
-  font-weight: bolder;
+  font-weight: 700;
+  display: flex;
+  font-size:18px;
+  line-height: 26px;
+}
+.button img {
+  margin-right: 7px;
 }
