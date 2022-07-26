@@ -116,9 +116,16 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
 .firstview-images {
   margin-bottom: 25px;
   display:inline-flex;
-  gap: 8px;
 }
-
+.firstview-images img {
+    margin-right: 8px;
+}
+.firstview-images img:nth-of-type(2) {
+    width: 40%;
+}
+.firstview-images img:last-of-type {
+    margin-right: 0;
+}
 .link {
   display: flex;
   height: 64px;
@@ -355,6 +362,10 @@ main {
     justify-content: space-between;
     margin-bottom: 30px;
     width: 100%;
+}}
+@media screen and (max-width: 767px){
+.firstview-images img {
+    width: 27.5%;
 }}
 @media screen and (max-width: 767px){
 .link {
